@@ -14,7 +14,7 @@ After you pip install the requirements.txt file:
 4. To get the html file, run jupyter nbconvert --to html --no-input biorxiv_medrxiv_history.ipynb
 
 ## Credit
-Credit goes to the [snscrape project](https://github.com/JustAnotherArchivist/snscrape), for their amazing work that makes this type of data curation possible. If anything, I hope this project brigs awareness to their work. 
+Credit goes to the [snscrape project](https://github.com/JustAnotherArchivist/snscrape), for their amazing work that makes this type of data curation possible. If anything, I hope this project brigs awareness to their work. I also hope that my project contibutes to theirs by providing an example of how to use their python package, which has not been documented yet as their command line interface has. 
 
 ## Why it works
 Biorxiv and medrxiv preprint servers create a tweet every time a new manuscript is uploaded. The tweet contains the title of the paper as well as a link to the paper. Scraping the tweet archives of the corresponding twitter usernames gives you the corpus of everything that has ever been uploaded to the servers along with the tweet metadata. As such, you can see what was uploaded when, and what kind of reception it got on twitter. This is useful in determining what papers are going to be "seminal" down the line. One would otherwise have to wait a year or more for the pre-print to make it through peer review (if it does) and then wait for it to accumulate citations. 
