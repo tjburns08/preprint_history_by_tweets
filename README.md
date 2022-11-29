@@ -9,7 +9,7 @@ This project solves the following problems:
 ## How to use
 After you pip install the requirements.txt file:
 1. Go to src/
-2. Run scrape_tweets.py. Note that the file users.csv contains the twitter users you want to scrape. In this case, it's biorxiv and medrxiv. 
+2. Run scrape_tweets.py. Note that the file users.csv contains the twitter users you want to scrape. In this case, it's biorxiv and medrxiv. This will produce output as csv files that sit in data/.
 3. Run biorxiv_medrxiv_history.ipynb to get the updated table. 
 4. To get the html file, run jupyter nbconvert --to html --no-input biorxiv_medrxiv_history.ipynb
 
