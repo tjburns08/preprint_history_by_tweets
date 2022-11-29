@@ -50,7 +50,7 @@ users = pd.read_csv('users.csv')
 users = users['user'].to_list()
 
 # Here are the existing csv files, previously outputted from this script. The code below adds to them. 
-curr_files = glob.glob('output/*')
+curr_files = glob.glob('../data/*')
 now = datetime.now()
 now = now.strftime('%Y-%m-%d')
 
@@ -61,7 +61,7 @@ for i in users:
         print('User in curr_files')
 
         # Read in file
-        df_orig = pd.read_csv('output/' + i + '_tweets_scraped.csv', lineterminator='\n')
+        df_orig = pd.read_csv('../data/' + i + '_tweets_scraped.csv', lineterminator='\n')
         print('df_orig')
         print(df_orig)
 
@@ -80,6 +80,7 @@ for i in users:
         print(df)
        
         df = df.append(df_orig, ignore_index = True)
+        df = df.drop_duplicates(subset=['ID'])
         # df = pd.concat([df,df_orig]).drop_duplicates().reset_index(drop=True)
         print('final_merged_df')
         print(df)
