@@ -1,6 +1,6 @@
 
 ## Introduction
-This project creates and updates the table of biorxiv and medrxiv pre-prints that I have on my [website](https://tjburns08.github.io/biorxiv_medrxiv_history.html). This project can be generalized to any tweets from any user.
+This project creates and updates the table of biorxiv and medrxiv pre-prints that I have on my [website](https://tjburns08.github.io/biorxiv_medrxiv_history.html). This project can be generalized to any tweets from any username.
 
 This project solves the following problems:
 1. How to stay ahead of the pre-print literature in your field and in general.
